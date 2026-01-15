@@ -17,6 +17,8 @@ import {
   ShoppingCart
 } from 'lucide-react';
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+import profile from "../assets/Arnav Website photo.jpeg";
+
 
 export default function App() {
   const { scrollYProgress } = useScroll();
@@ -302,7 +304,7 @@ export default function App() {
                 />
                 <div className="relative w-full h-full rounded-2xl overflow-hidden border-4 border-gray-800">
                   <ImageWithFallback
-                    src="public/Arnav Website photo.jpeg"
+                    src={profile}
                     alt="Arnav"
                     className="w-full h-full object-cover"
                   />
