@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import profile from "../assets/Arnav Website photo.jpeg";
-import Foodbowl from "../assets/Foodbowl.jpg";
+import Foodbowl from "../assets/foodbowl.jpg";
 
 
 export default function App() {
@@ -58,7 +58,7 @@ export default function App() {
       title: 'Foody Fuel Website',
       description:
         'Responsive front-end web app for browsing menus and information , with a  focus on user friendly interface and smooth navigation',
-      image: Foodbowl,
+      image: foodbowl,
       tech: ['React', 'TypeScript', 'Tailwind CSS'],
       link: 'https://foody-fuel.vercel.app/',
       icon: <CheckSquare className="w-6 h-6" />
