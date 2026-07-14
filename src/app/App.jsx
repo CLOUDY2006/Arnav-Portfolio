@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import profile from "../assets/Arnav Website photo.jpeg";
+import Foodbowl from "../assets/Foodbowl.jpg";
 
 
 export default function App() {
@@ -54,13 +55,12 @@ export default function App() {
 
   const projects = [
     {
-      title: 'To-Do List App',
+      title: 'Foody Fuel Website',
       description:
-        'A feature-rich task management application with local storage, drag & drop functionality, and beautiful UI.',
-      image:
-        'https://images.unsplash.com/photo-1723505613384-b55168b80568?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+        'Responsive front-end web app for browsing menus and information , with a  focus on user friendly interface and smooth navigation',
+      image: Foodbowl,
       tech: ['React', 'TypeScript', 'Tailwind CSS'],
-      link: 'https://cloudy2006.github.io/TO-DO-List/',
+      link: 'https://foody-fuel.vercel.app/',
       icon: <CheckSquare className="w-6 h-6" />
     },
     {
@@ -137,7 +137,7 @@ export default function App() {
             ease: "easeInOut"
           }}
         />
-        
+
         {/* Floating particles */}
         {[...Array(20)].map((_, i) => (
           <motion.div
@@ -191,7 +191,7 @@ export default function App() {
             >
               <span className="text-gray-400 text-lg">Hello, I'm</span>
             </motion.div>
-            
+
             <motion.h1
               className="text-7xl md:text-8xl mb-4 relative"
               initial={{ opacity: 0, y: 50 }}
@@ -239,7 +239,7 @@ export default function App() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              Crafting beautiful digital experiences with code and creativity. 
+              Crafting beautiful digital experiences with code and creativity.
               Passionate about building innovative solutions that make a difference.
             </motion.p>
 
@@ -367,8 +367,8 @@ export default function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.2, duration: 0.8 }}
                 viewport={{ once: true }}
-                whileHover={{ 
-                  scale: 1.05, 
+                whileHover={{
+                  scale: 1.05,
                   backgroundColor: 'rgba(255, 255, 255, 0.08)',
                   borderColor: 'rgba(75, 85, 99, 0.5)'
                 }}
@@ -418,7 +418,7 @@ export default function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.2, duration: 0.8 }}
                 viewport={{ once: true }}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.02,
                   borderColor: 'rgba(156, 163, 175, 0.5)',
                   boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5)'
@@ -449,7 +449,7 @@ export default function App() {
                 <div className="p-6">
                   <h3 className="text-2xl mb-3">{project.title}</h3>
                   <p className="text-gray-500 mb-4 text-sm">{project.description}</p>
-                  
+
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, idx) => (
@@ -510,7 +510,7 @@ export default function App() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: i * 0.05, duration: 0.5 }}
                 viewport={{ once: true }}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.1,
                   backgroundColor: 'rgba(55, 65, 81, 0.8)',
                   borderColor: 'rgba(156, 163, 175, 0.5)',
@@ -563,14 +563,21 @@ export default function App() {
             viewport={{ once: true }}
           >
             {[
-              { icon: <Github className="w-8 h-8" />, 
+              {
+                icon: <Github className="w-8 h-8" />,
                 label: "GitHub",
-                 link: "https://github.com/CLOUDY2006" },
-              { icon: <Linkedin className="w-8 h-8" />, 
+                link: "https://github.com/CLOUDY2006"
+              },
+              {
+                icon: <Linkedin className="w-8 h-8" />,
                 label: "LinkedIn",
-                link:"https://www.linkedin.com/in/arnav-kumar-gupta-9a1aa4320/" },
-              { icon: <Mail className="w-8 h-8" />, 
-                label: "Email"},
+                link: "https://www.linkedin.com/in/arnav-kumar-gupta-9a1aa4320/"
+              },
+              {
+                icon: <Mail className="w-8 h-8" />,
+                label: "Email",
+                link: "https://mail.google.com/mail/?view=cm&fs=1&to=arnavg0106@gmail.com"
+              },
             ].map((social, i) => (
               <motion.a
                 key={i}
@@ -578,8 +585,8 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 backdrop-blur-sm p-6 rounded-full border border-gray-800"
-                whileHover={{ 
-                  scale: 1.2, 
+                whileHover={{
+                  scale: 1.2,
                   rotate: 360,
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   boxShadow: '0 0 30px rgba(75, 85, 99, 0.4)'
@@ -599,9 +606,11 @@ export default function App() {
             viewport={{ once: true }}
           >
             <motion.a
-              href="mailto:arnav@example.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=arnavg0106@gmail.com&su=Portfolio%20Inquiry"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-12 py-4 bg-gradient-to-r from-gray-700 to-gray-800 rounded-full text-xl font-semibold border border-gray-700"
-              whileHover={{ 
+              whileHover={{
                 scale: 1.1,
                 boxShadow: '0 0 40px rgba(75, 85, 99, 0.6)'
               }}
