@@ -58,7 +58,7 @@ export default function App() {
       title: 'Foody Fuel Website',
       description:
         'Responsive front-end web app for browsing menus and information , with a  focus on user friendly interface and smooth navigation',
-      image: foodbowl,
+      image: Foodbowl,
       tech: ['React', 'TypeScript', 'Tailwind CSS'],
       link: 'https://foody-fuel.vercel.app/',
       icon: <CheckSquare className="w-6 h-6" />
